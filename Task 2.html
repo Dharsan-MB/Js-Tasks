@@ -1,0 +1,35 @@
+<!-- Password Strength Validator
+Concepts: prompt(), function, condition, onclick()
+* Ask user for a password.
+* Check if it includes:
+    * Minimum 8 characters
+    * At least one uppercase
+    * At least one number
+    * At least one special character -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+
+        <input type="button" value="Enter Password" onclick="checkPass();">
+    </form>
+
+    <script>
+        function checkPass(){
+        const pass=prompt("Enter Password");
+        if (pass.length >= 8 && /[A-Z]/.test(pass) && /[0-9]/.test(pass) && /[!@#$%^&*(),.?":{}|<>]/.test(pass)){
+            alert("Valid Password");
+        }
+        else{
+            alert("Enter a Valid password");
+        }
+        }
+    </script>
+</body>
+</html>
