@@ -1,0 +1,43 @@
+<!-- Login Simulation with Limited Attempts
+
+Concepts: prompt(), function, conditional, loop, break
+* Ask for username and password.
+* Allow only 3 attempts to enter correct login.
+* Show locked message if failed 3 times. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form style="text-align: center; margin: 28rem;">
+            <label for="username">Username</label>
+            <input type="text" value="" placeholder="enter username" >
+            <br>
+            <input style=" font-size: 2rem; padding: 1rem;" type="button" value="Login" onClick="loginPrompt();"> 
+        </form>
+    
+    <script>
+        var aUsername="mbd";
+        var aPassword="1234";
+        function loginPrompt(){
+            var c=2;
+            while(c>-1){
+            var username = prompt("Enter your username:","abc");
+            var password = prompt("Enter your password:","pass");
+            if(username!=aUsername || password!=aPassword){
+                alert("The Username or Password you Entered is Wrong! Try Agian. Remaining Attempts : "+c);
+                c=c-1;
+            }
+            else{
+                alert("Logged in Successfully");
+                c=c-3;
+            }
+            }
+        }
+    </script>
+</body>
+</html>
