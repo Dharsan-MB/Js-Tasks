@@ -1,0 +1,43 @@
+<!-- FizzBuzz Challenge
+Concepts: prompt(), loop, if-else, continue
+* Ask the user to enter a number n.
+* Print numbers from 1 to n:
+    * If divisible by 3: print "Fizz"
+    * If divisible by 5: print "Buzz"
+    * If both: print "FizzBuzz" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <label for="number">Enter Number :</label>
+        <input type="number" name="number" id="getNum">
+        <input type="button" name="submit" id="submit" value="submit" onclick="fizzBuzz()">
+    </form>
+
+    <script>
+        function fizzBuzz(){
+            const num=document.getElementById("getNum").value;
+            if(num%3==0 && num%5==0){
+                document.write("FizzBuzz");
+            }
+            else if(num%3==0){
+                document.write("Fizz");
+            }
+            else if(num%5==0){
+                document.write("Buzz");
+            }
+            else{
+                document.write("none");
+            }
+        }
+
+    </script>
+</body>
+</html>
