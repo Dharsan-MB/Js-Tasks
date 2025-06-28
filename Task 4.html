@@ -1,0 +1,43 @@
+<!-- Even or Odd Counter
+Concepts: prompt(), function, loop, condition
+* Ask the user for a range of numbers (start and end).
+* Count and display how many even and odd numbers are there in the range. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="button" value="Enter Number" onclick="counter();">
+    </form>
+
+    <script>
+        function counter(){
+            let start=parseInt(prompt("Enter Start Range"));
+            let end=parseInt(prompt("Enter End Range"));
+            let oddC=0;
+            let evenC=0;
+            for(let i=start;i<=end;i++){
+                if(i%2===0){
+                    evenC++;
+                    document.writeln("even "+i);
+                }   
+                else{
+                    
+                    oddC++;
+                    document.writeln("odd "+i);
+                }
+            }
+            alert("odd "+oddC);
+            alert("even "+evenC);
+                
+        }
+    </script>
+
+</body>
+</html>
