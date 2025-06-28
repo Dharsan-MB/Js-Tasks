@@ -1,0 +1,32 @@
+<!-- Count Words and Characters
+Concepts: prompt(), function, loop, continue
+* Take a sentence from the user.
+* Count the number of words and characters (excluding spaces). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="countLetters();">
+        Click to count letters
+    </button>
+    
+    <script>
+        function countLetters(){
+            const str=prompt("Enter a Sentence");
+            let count = 1;
+            for (let char of str) {
+                if (char === ' ') {
+                    count++;
+                }  
+            }
+            document.write("No.of Words : "+count+"  ");
+            document.writeln("No.of Letters : "+str.replaceAll(" ","").length);
+        }
+    </script>
+</body>
+</html>
