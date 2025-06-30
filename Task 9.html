@@ -1,0 +1,31 @@
+<!-- Character Counter (Ignore Spaces)
+Concepts: prompt(), loop, function, continue
+* Ask user to enter a sentence.
+* Count number of characters excluding spaces using continue. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="countCharacters();">
+        Click to count Character
+    </button>
+    
+    <script>
+        function countCharacters(){
+            const str=prompt("Enter a Sentence");
+            let count = 0;
+            for (let char of str) {
+                if (char === ' ')continue;
+                    count++;
+            }
+            document.write("No.of Characters : "+count);
+        }
+    </script>
+</body>
+</html>

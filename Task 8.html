@@ -1,0 +1,43 @@
+<!-- Vowel and Consonant Counter
+Concepts: prompt(), loop, conditional, continue
+* Ask the user for a sentence.
+* Count and display total vowels and consonants.
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="countVowels();">Count Vowels and Consonets</button>
+
+    <script>
+        {
+            let VCount = 0;
+            let CCount = 0;
+            function countVowels(){
+                const str=prompt("Enter a Strings");
+                for(let i=0;i<str.length;i++){
+                    if(str[i]==/[aeiouAEIOU]/){
+                        VCount++;
+                    }
+                    else{
+                        CCount++;
+                    }
+
+                }
+                if(/[aeiouAEIOU]/.test(str)){
+                    VCount++;
+                }
+                document.writeln(VCount+ "   ");
+                document.writeln(CCount);
+
+            }
+        }
+    </script>
+</body>
+</html>
