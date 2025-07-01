@@ -20,13 +20,11 @@ Concepts: prompt(), function, conditional, loop, break
         function atmWithdraw(){
             let bal=prompt("Enter Balance : ");
             while (bal>0) {
-                let wtd=parseInt(prompt("Enter withdraw amount : "));
-                if (bal>wtd){
-                    bal-=wtd;
-                    console.log(bal+" "+wtd);
+                    let wtd=parseInt(prompt("Enter withdraw amount : "+bal));
+                if (bal>=wtd){
+                    bal=bal-wtd;
                 }
             }
-            document.write(bal);
         }
     </script>
 </body>
