@@ -116,7 +116,7 @@ Create a button that changes the image source when clicked. The image has an id 
 
 
 Task 15:
-Ask the user how many times to repeat a message. Display "Hello JavaScript!" that many times using a for loop and console.log().
+Ask the user how many times to repeat a message. Display c that many times using a for loop and console.log().
 
 
 Task 16:

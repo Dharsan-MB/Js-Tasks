@@ -1,0 +1,27 @@
+<!-- Ask the user how many times to repeat a message. 
+Display "Hello JavaScript!" that many times using a for loop 
+and console.log(). -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="repeatMsg()">Enter Count</button>;
+
+    <script>
+        function repeatMsg(){
+            const c=parseInt(prompt("Enter Repeat Count : "));
+            let i=0;
+            while (i<=c){
+                console.log("Hello JavaScript!");
+                i++;
+            }
+        }
+    </script>
+</body>
+</html>
