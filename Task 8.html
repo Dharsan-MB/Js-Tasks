@@ -17,26 +17,26 @@ Concepts: prompt(), loop, conditional, continue
 
     <script>
         {
-            let VCount = 0;
-            let CCount = 0;
-            function countVowels(){
-                const str=prompt("Enter a Strings");
-                for(let i=0;i<str.length;i++){
-                    if(str[i]==/[aeiouAEIOU]/){
-                        VCount++;
-                    }
-                    else{
-                        CCount++;
-                    }
+    function countVowels() {
+    const input = prompt("Enter a sentence:");
+    const s = input.toLowerCase();
 
-                }
-                if(/[aeiouAEIOU]/.test(str)){
-                    VCount++;
-                }
-                document.writeln(VCount+ "   ");
-                document.writeln(CCount);
+    let vowels = 0;
+    let consonants = 0;
 
-            }
+    for (let i = 0; i < s.length; i++) {
+      const char = s[i];
+
+      if (/[aeiou]/.test(char)) {
+        vowels++;
+      }
+        else {
+        consonants++;
+      }
+    }
+
+    alert("Vowels: " + vowels + "\nConsonants: " + consonants);
+        }
         }
     </script>
 </body>
