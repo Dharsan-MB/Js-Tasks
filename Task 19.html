@@ -1,0 +1,27 @@
+<!-- Create a paragraph with id hoverPara. 
+When the mouse hovers over it, change its background color to yellow.
+ On mouse out, change it back. -->
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <p id="hoverPara">Paragraph</p>
+
+    <script>
+        document.getElementById("hoverPara").addEventListener('mouseover',onHover);
+        document.getElementById("hoverPara").addEventListener('mouseout',onOut);
+        function onHover(){
+            document.getElementById("hoverPara").setAttribute('style','background-color:yellow');
+        }
+        function onOut(){
+            document.getElementById("hoverPara").setAttribute('style','background-color:red');
+        }
+    </script>
+ </body>
+ </html>
