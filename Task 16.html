@@ -1,0 +1,28 @@
+<!-- Create two input fields for numbers and a button to calculate
+ and show the sum in a paragraph with id sumResult. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="number" name="num1" id="num1">;
+        <input type="number" name="num2" id="num2">;
+        <button onclick="sumNums()">submit</button>
+    </form>
+
+    <script>
+        function sumNums(){
+            const n1=parseInt(document.getElementById("num1").value);
+            const n2=parseInt(document.getElementById("num2").value);
+            const sum=n1+n2
+            document.write(sum);
+        }
+    </script>
+</body>
+</html>
