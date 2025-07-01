@@ -1,0 +1,33 @@
+<!-- ATM Withdrawal Simulation
+Concepts: prompt(), function, conditional, loop, break
+* Allow the user to withdraw an amount.
+* Keep asking until balance becomes 0 or user cancels.
+* Break if amount exceeds balance. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="atmWithdraw();">
+        withdraw amount
+    </button>
+    
+    <script>
+        function atmWithdraw(){
+            let bal=prompt("Enter Balance : ");
+            while (bal>0) {
+                let wtd=parseInt(prompt("Enter withdraw amount : "));
+                if (bal>wtd){
+                    bal-=wtd;
+                    console.log(bal+" "+wtd);
+                }
+            }
+            document.write(bal);
+        }
+    </script>
+</body>
+</html>
