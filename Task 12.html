@@ -1,0 +1,52 @@
+<!-- Grade Calculator
+Concepts: prompt(), function, onclick(), conditional (if-else)
+* Take marks from 5 subjects.
+* Calculate percentage and assign grades:
+    * 90+ A
+    * 80–89 B
+    * 70–79 C
+    * 50–69 D
+    * Below 50: Fail -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="calcGrade();">Calculate Grade</button>
+
+    <script>
+        {
+            
+            function calcGrade(){
+                const m1=prompt("Enter a Mark  : ");
+                    let result;
+                    if(m1>=90){
+                        result='A';
+                    }
+                    else if(m1>=80){
+                        result='B';
+                        
+                    }
+                    else if(m1>=70){
+                        result='C';
+                        
+                    }
+                    else if(m1>=60){
+                        result='D';
+                        
+                    }
+                    else{
+                        result='Fail';
+                        
+                    }
+                    document.write(result);
+            }
+        }
+    </script>
+</body>
+</html>
