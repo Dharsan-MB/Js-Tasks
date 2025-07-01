@@ -1,0 +1,22 @@
+<!-- Create a button that changes the image source when clicked. 
+The image has an id myImage. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="changeImg()">Change Img</button>
+    <img src="./public/img1.jpg" alt="" id="myImage">
+    <script>
+        function changeImg(){
+            const igg=document.getElementById("myImage");
+            igg.setAttribute('src','./public/img2.jpg');
+        }
+    </script>
+</body>
+</html>
