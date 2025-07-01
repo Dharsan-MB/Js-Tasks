@@ -1,0 +1,32 @@
+<!-- Create a password input box and a button.
+ If the entered password is less than 6 characters,
+  show a warning in red. -->
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <form >
+        <input type="password" name="pass" id="pass">
+        <button type="button" onclick="checkPass()">click</button>
+        <div id="d"></div>
+
+        <script>
+            function checkPass(){
+                const n=document.getElementById("pass").value;
+                if(n.length<8){
+                    document.getElementById("d").innerHTML="<p style='color: red;'>Longer Password Please</p>"
+                }
+                else{
+                    document.getElementById("d").innerHTML="";
+                }
+            }
+        </script>
+    </form>
+  </body>
+  </html>
