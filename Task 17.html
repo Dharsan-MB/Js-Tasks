@@ -1,0 +1,32 @@
+<!-- Create a form with an input box. When a button is clicked, 
+check if the input is empty. 
+If it is, display “Input required!” in red below the box. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="text" name="txt" id="txt">
+        <button type="button" onclick="checkInput()">check</button>
+        <div id="d"></div>
+
+        <script>
+            function checkInput(){
+                const val=document.getElementById("txt");
+                if(val.value == ""){
+                    document.getElementById("d").innerHTML="<p style='color: red;'>Input required!</p>";
+                }
+                else{
+                    document.getElementById("d").innerHTML="";
+                }
+            }
+        </script>
+    </form>
+</body>
+</html>

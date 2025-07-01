@@ -1,0 +1,25 @@
+<!-- 1)Create a button that increases the font size of a paragraph 
+ with id zoomText each time it's clicked.
+2)Using prompt(), get two numbers from the user and
+ show their multiplication result inside a div with id
+resultBox. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultBox"><h1></h1></div>
+
+    <script>
+        const a=parseInt(prompt("enter a : "));
+        const b=parseInt(prompt("enter b : "));
+        const c=a*b;
+        document.getElementById("resultBox").textContent=c;
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- 1)Create a button that increases the font size of a paragraph 
+ with id zoomText each time it's clicked.
+2)Using prompt(), get two numbers from the user and
+ show their multiplication result inside a div with id
+resultBox. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="increaseSize()">increase font size</button>
+    <button onclick="decreaseSize()">decrease font size</button>
+    <p id="para" style="font-size: 1rem;">
+        Sample Text
+    </p>
+
+    <script>
+        function increaseSize(){
+            const pa=document.getElementById("para");
+            let currentSize = parseFloat(pa.style.fontSize) || 1;
+            let newSize = currentSize + 1;
+            pa.style.fontSize = newSize + "rem";
+        }
+        function decreaseSize(){
+            const pa=document.getElementById("para");
+            let currentSize = parseFloat(pa.style.fontSize) || 1;
+            let newSize = currentSize - 1;
+            pa.style.fontSize = newSize + "rem";
+        }
+    </script>
+</body>
+</html>

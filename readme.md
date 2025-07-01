@@ -131,5 +131,5 @@ Task 18:
 Create a password input box and a button. If the entered password is less than 6 characters, show a warning in red.
 
 
-Task :
+Task 19:
 Create a paragraph with id hoverPara. When the mouse hovers over it, change its background color to yellow. On mouse out, change it back.
