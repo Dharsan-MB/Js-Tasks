@@ -1,0 +1,38 @@
+<!-- Number Guessing Game
+Concepts: prompt(), function, onclick(), conditional, loop, break
+* Ask the user to guess a number between 1 and 10.
+* If guessed correctly within 3 tries, show success; otherwise show the correct answer. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="guessNum();">Click to Guess</button>
+
+    
+    <script>
+        function guessNum(){
+            var c=2;
+            var answer = Math.floor(Math.random() * 10) + 1;
+            while(c>-1){
+            var guess = prompt("Enter your guess 1-10 : ");
+            console.log("Answer is : "+answer);
+            if(guess!=answer){
+                alert("The Guess is Wrong! Try Agian. Remaining Attempts : "+c);
+                c=c-1;
+            }
+            else{
+                alert("Guessed Correctly! The Answer is : "+answer);
+                c=c-3;
+            }
+            }   
+        }
+    </script>
+</body>
+</html>

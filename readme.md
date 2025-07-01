@@ -109,3 +109,27 @@ Number Guessing Game
 Concepts: prompt(), function, onclick(), conditional, loop, break
 * Ask the user to guess a number between 1 and 10.
 * If guessed correctly within 3 tries, show success; otherwise show the correct answer.
+
+
+Task 14:
+Create a button that changes the image source when clicked. The image has an id myImage.
+
+
+Task 15:
+Ask the user how many times to repeat a message. Display "Hello JavaScript!" that many times using a for loop and console.log().
+
+
+Task 16:
+Create two input fields for numbers and a button to calculate and show the sum in a paragraph with id sumResult.
+
+
+Task 17:
+Create a form with an input box. When a button is clicked, check if the input is empty. If it is, display “Input required!” in red below the box.
+
+
+Task 18:
+Create a password input box and a button. If the entered password is less than 6 characters, show a warning in red.
+
+
+Task :
+Create a paragraph with id hoverPara. When the mouse hovers over it, change its background color to yellow. On mouse out, change it back.
